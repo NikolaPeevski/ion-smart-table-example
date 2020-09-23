@@ -24,3 +24,212 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+html,
+html.md {
+    --ion-default-font: Avenir, sans-serif;
+}
+
+h1 {
+    font-family: Avenir, sans-serif;
+    font-size: var(--font-size-xxl);
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: oblique;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+span,
+p,
+.button-small {
+    font-family: Avenir, sans-serif;
+    font-size: var(--font-size-xs);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
+.white-space {
+    white-space: normal !important;
+}
+
+.checkbox-label {
+    padding-left: 10px;
+}
+
+.h-100 {
+    min-height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.min-height-l {
+    min-height: 250px;
+}
+
+.flex {
+    display: flex;
+}
+
+.gradient-layer {
+    background-image: linear-gradient(to bottom, rgba(var(--ion-color-secondary-rgb), 0.8), rgba(var(--ion-color-primary-rgb), 0.8));
+}
+
+.text-light {
+    color: var(--ion-color-light);
+}
+
+ion-menu {
+    max-width: 300px !important;
+}
+
+ion-content {
+    --background: var(--ion-color-medium);
+}
+
+.background-light {
+    --background: var(--ion-color-light);
+}
+
+.menu-ion-content {
+    //--background: var(--ion-color-light);
+    --background: linear-gradient(to top, rgba(var(--ion-color-secondary-rgb), 1), rgba(97, 107, 209, 0)), url(/assets/images/login-background.jpg) no-repeat center/cover fixed;
+}
+
+.btn-transparent {
+    --box-shadow: none;
+    --background: transparent;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.btn-flat {
+    --box-shadow: none;
+}
+
+.btn-pd-sm {
+    padding: 0 5px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.round {
+    border-radius: 20px;
+}
+
+.round-border {
+    border-radius: 20px;
+    border: 1px solid var(--ion-color-medium-shade)
+}
+
+.light-transparent {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.transparent {
+    background: rgba(255, 255, 255, 0);
+}
+
+//tables
+
+.default-table {
+    thead {
+        th {
+            text-align: left;
+            font-size: var(--font-size-m);
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid var(--ion-color-dark);
+
+            td {
+                font-size: var(--font-size-s);
+            }
+        }
+    }
+
+    tr {
+        line-height: 45px;
+        color: var(--ion-color-dark);
+    }
+
+    .three-icon-button-td {
+        width: 101px;
+    }
+
+    .two-icon-button-td {
+        width: 71px;
+    }
+}
+
+.service-icon {
+    float: left;
+    --padding-start: 0;
+
+    ion-avatar {
+        background-color: var(--ion-color-primary);
+        color: var(--ion-color-light);
+        text-align: center;
+    }
+}
+
+.service-icon-skeleton {
+    float: left;
+    --padding-start: 0;
+
+    ion-avatar {
+        background-color: var(--ion-color-skeleton);
+        color: var(--ion-color-light);
+        text-align: center;
+    }
+}
+
+//item list
+
+ion-item-group {
+    overflow: hidden;
+}
+
+ion-item-divider {
+    //color: var(--ion-color-dark);
+    // background: transparent;
+}
+
+ion-item {
+    --background: rgba(0, 0, 0, 0);
+    --border-color: rgba(0, 0, 0, 0);
+}
+
+.item-border {
+    --border-color: var(--ion-color-medium);
+
+    ion-item {
+        --border-color: var(--ion-color-medium);
+    }
+}
+
+//components
+
+.logo-row {
+    color: var(--ion-color-light);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.account-details {
+    position: relative;
+    top: 10px;
+}

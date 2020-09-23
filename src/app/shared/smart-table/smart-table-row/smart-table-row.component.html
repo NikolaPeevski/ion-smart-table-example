@@ -1,0 +1,5 @@
+<tr *ngIf="smartTableRow && smartTableRow.smartTableCellColl">
+  <td *ngFor="let cell of smartTableRow.smartTableCellColl">
+    {{ cell.value }}
+  </td>
+</tr>

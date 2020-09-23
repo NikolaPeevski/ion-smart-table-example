@@ -1,0 +1,25 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card class="ion-padding">
+        <table class="default-table w-100">
+          <thead>
+            <tr>
+              <th *ngFor="let tableHeader of smartTableHeaderColl">
+                {{ tableHeader.headerName }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of smartTableRowColl">
+              <td
+                *ngFor="let cell of row.smartTableCellColl"
+                [innerHtml]="getVal(cell.value)"
+              ></td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
